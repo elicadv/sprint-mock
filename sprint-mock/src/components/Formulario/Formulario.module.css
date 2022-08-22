@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imput{
+  width: 500px;
+  padding:5px;
+  border: 1px solid #707070;
+}
+
+.botao{
+  margin-top: 20px;
+  margin-left: 150px;
+  width: 200px;
+  padding:5px;
+  border: 1px solid #707070;
+}
