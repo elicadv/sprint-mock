@@ -9,9 +9,9 @@ function Formulario (){
             <div>
             <form>
                 <Label texto="Nome do seu amigo:"/>
-                <input className={S.imput} placeholder="Nome"></input>
+                <input input type="text" pattern="^[a-zA-Z][a-zA-Z-_\.]{1,20}$" required className={S.imput} placeholder="Nome"></input>
                 <Label texto="E-mail:"/>
-                <input className={S.imput} placeholder="E-mail"></input>
+                <input type="email" pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$' required className={S.imput} placeholder="E-mail"></input>
                 <button className={S.botao}>Enviar agora</button>
             </form>
             </div>

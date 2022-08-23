@@ -5,11 +5,11 @@ function Form() {
   return (
     <form>
       <Label texto= "Nome:"/>
-      <input className={S.input} />
+      <input type="text" pattern="^[a-zA-Z][a-zA-Z-_\.]{1,20}$" className={S.input} />
       <Label texto= "E-mail:"/>
-      <input className={S.input} />
+      <input type="email" pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$' className={S.input} />
       <Label texto= "CPF:"/>
-      <input className={S.input} />
+      <input type="text" pattern='^[0-9]{11}$' className={S.input} />
       <div className={S.radio}>
           <input type="radio" name="sexo" />
           <Label texto="Masculino" />
